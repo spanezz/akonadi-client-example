@@ -17,6 +17,9 @@ include (KDE4Defaults)
 find_package(KdepimLibs 4.14.1)
 find_package(Akonadi 1.12.90 QUIET CONFIG)
 
+# Akonadi currently needs this, since tag.h #includes <KUrl> and not <KDE/KUrl>
+include_directories(${KDE4_INCLUDES})
+
 include(${QT_USE_FILE})
 add_definitions(${QT_DEFINITIONS})
 
