@@ -2,9 +2,9 @@ cmake_minimum_required(VERSION 3.0)
 
 project(example)
 
-## Find includes in corresponding build directories
+# Find includes in corresponding build directories
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
-## Instruct CMake to run moc automatically when needed.
+# Instruct CMake to run moc automatically when needed
 set(CMAKE_AUTOMOC ON)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
